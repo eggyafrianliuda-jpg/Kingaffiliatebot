@@ -10,4 +10,4 @@ def generate(prompt):
         response = model.generate_content(prompt)
         return response.text
     except Exception as e:
-        return f"ERROR: {e}"
+        return str(e)
